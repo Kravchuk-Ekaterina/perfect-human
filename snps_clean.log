@@ -1,0 +1,32 @@
+PLINK v1.90b6.24 64-bit (6 Jun 2021)
+Options in effect:
+  --23file ./data/SNP_raw_v4_Full_20170514175358.txt
+  --out snps_clean
+  --output-chr MT
+  --recode vcf
+  --snps-only just-acgt
+
+Hostname: kate-the-snail-VirtualBox
+Working directory: /home/kate_the_snail/Projects/IB/perfect-human
+Start time: Tue Feb 22 19:19:04 2022
+
+Random number seed: 1645546744
+10646 MB RAM detected; reserving 5323 MB for main workspace.
+--23file: snps_clean-temporary.bed + snps_clean-temporary.bim +
+snps_clean-temporary.fam written.
+15125 variants with indel calls present.  '--snps-only no-DI' or
+--list-23-indels may be useful here.
+Inferred sex: male.
+595401 out of 610526 variants loaded from .bim file.
+1 person (1 male, 0 females) loaded from .fam.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1 founder and 0 nonfounders present.
+Calculating allele frequencies... done.
+Warning: 103 het. haploid genotypes present (see snps_clean.hh ); many commands
+treat these as missing.
+Total genotyping rate is 0.989246.
+595401 variants and 1 person pass filters and QC.
+Note: No phenotypes present.
+--recode vcf to snps_clean.vcf ... done.
+
+End time: Tue Feb 22 19:19:05 2022
