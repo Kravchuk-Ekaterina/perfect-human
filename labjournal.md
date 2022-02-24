@@ -70,5 +70,14 @@ awk '($32!="-") ' ./data/SNP_raw_v4_Full_20170514175358.txt | grep -P '\tMT\t' |
 I am using mthap https://dna.jameslick.com/mthap/ <br>
 The output:<br>
 ![mthap](./images/mthap.jpg "mthap")<br>
-
+## 4. Y-chromosome haplogroup
+Creating a file which contains SNPs in Y-chromosome:<br>
+```bash
+awk '($32!="-") ' ./data/SNP_raw_v4_Full_20170514175358.txt | grep -P '\tY\t' | sort | uniq > raw_snp_y.txt
+```
+I use Y-SNP Subclade Predictor https://ytree.morleydna.com/extractFromAutosomal <br>
+The output:<br>
+![y_pred](./images/y_pred.jpg "y_pred")<br>
+The suggested subclade:<br>
+![y_pred](./images/y_pred.png "y_pred_2")<br>
 
