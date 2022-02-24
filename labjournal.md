@@ -14,7 +14,7 @@ home/kate_the_snail/Загрузки/plink_linux_x86_64_20210606/plink --23file 
 ### 2.1. Running VEP
 I chosed to use VEP (Variant Effect Predictor) online https://www.ensembl.org/Tools/VEP <br>
 I used the following settings:<br>
-![VEP](./images/VEP.jpg "VEP")
+![VEP](./images/VEP.jpg "VEP")<br>
 I saved the results as vep_annotation.txt<br>
 ### 2.2. Chosing risk factors 
 Then I chosed the SNPs which are risk factors using the command:<br>
@@ -62,3 +62,13 @@ The results:
 33) rs7794745 (A>T) - CNTNAP2 gene - Autism 15;
 34) rs909253 (A>G) - LTA gene - Myocardial infarction; Psoriatic arthritis, susceptibility to.
 ```
+## 3. mtDNA haplogroup
+Creating a file which contains SNPs in mtDNA:<br>
+```bash
+awk '($32!="-") ' ./data/SNP_raw_v4_Full_20170514175358.txt | grep -P '\tMT\t' | sort | uniq > raw_snp_mt.txt
+```
+I am using mthap https://dna.jameslick.com/mthap/ <br>
+The output:<br>
+![mthap](./images/mthap.jpg "mthap")<br>
+
+
