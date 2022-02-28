@@ -80,4 +80,85 @@ The output:<br>
 ![y_pred](./images/y_pred.jpg "y_pred")<br>
 The suggested subclade:<br>
 ![y_pred](./images/y_pred.png "y_pred_2")<br>
+## 5. Nationality
+I am using https://github.com/stevenliuyi/admix to define nationality<br>
+Installing admix:
+```bash
+pip install git+https://github.com/stevenliuyi/admix
+```
+Running admix:
+```bash
+admix -f data/SNP_raw_v4_Full_20170514175358.txt -v 23andme -m K7b K12b globe13 world9 E11
+```
+The output:
+```bash
+Admixture calculation models: K7b,K12b,globe13,world9,E11
 
+Calcuation is started...
+
+K7b
+South Asian: 2.47%
+West Asian: 25.71%
+Siberian: 2.00%
+African: 0.12%
+Southern: 21.19%
+Atlantic Baltic: 48.50%
+East Asian: 0.00%
+
+
+K12b
+Gedrosia: 8.22%
+Siberian: 1.57%
+Northwest African: 1.83%
+Southeast Asian: 0.00%
+Atlantic Med: 18.38%
+North European: 34.10%
+South Asian: 1.73%
+East African: 0.00%
+Southwest Asian: 8.18%
+East Asian: 0.00%
+Caucasus: 25.99%
+Sub Saharan: 0.00%
+
+
+globe13
+Siberian: 1.43%
+Amerindian: 0.25%
+West African: 0.00%
+Palaeo African: 0.27%
+Southwest Asian: 12.85%
+East Asian: 0.00%
+Mediterranean: 24.47%
+Australasian: 0.91%
+Artic: 0.54%
+West Asian: 20.26%
+North European: 37.56%
+South Asian: 1.45%
+East African: 0.02%
+
+
+world9
+Amerindian: 0.22%
+East Asian: 0.00%
+African: 0.27%
+Atlantic Baltic: 48.02%
+Australasian: 0.70%
+Siberian: 2.02%
+Caucasus Gedrosia: 26.30%
+Southern: 20.76%
+South Asian: 1.71%
+
+
+E11
+African: 2.02%
+European: 68.54%
+India: 22.17%
+Malay: 0.30%
+South Chinese Dai: 0.00%
+Southwest Chinese Yi: 0.00%
+East Chinese: 0.00%
+Japanese: 0.00%
+North Chinese Oroqen: 1.04%
+Yakut: 1.35%
+American: 4.57%
+```
